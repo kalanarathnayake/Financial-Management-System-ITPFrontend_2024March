@@ -67,7 +67,7 @@ export default function ExpensesList() {
         localStorage.setItem('WaterBill', waterBill);
         localStorage.setItem('CurrentBill', currentBill);
         localStorage.setItem('SalaryExpense', salaryExpense);
-        localStorage.setItem('Data', date);
+        localStorage.setItem('Date', date);
     }
 
 
@@ -140,7 +140,7 @@ export default function ExpensesList() {
                                             <div class="flex justify-end sm:flex-row sm:text-left sm:justify-end gap-2">
                                                 <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
                                                     <Link className='font-semibold text-white no-underline' to={"/addExpenses"}>
-                                                        Create New Shop
+                                                        Add new Shop
                                                     </Link></button>
                                                 <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" onClick={exportPackages}>
                                                     Download Report Here
@@ -162,11 +162,11 @@ export default function ExpensesList() {
                                 </table>
                             </div>
                             <div className='relative grid content-start grid-cols-1 gap-4 overflow-x-auto shadow-md sm:rounded-lg'>
-                                <table className='w-full text-sm text-left text-gray-500 dark:text-gray-400'>
-                                    <thead className='p-5 text-xs text-gray-700 uppercase border bg-gray-50 dark:bg-gray-700 dark:text-gray-400'>
+                                <table className='w-full text-lg text-left text-gray-500 dark:text-gray-400'>
+                                    <thead className='p-5 text-s text-gray-700 uppercase border bg-gray-50 dark:bg-gray-700 dark:text-gray-400'>
                                         <tr>
-                                            <th className="p-2 border-black tbhead ">Shop Name</th>
-                                            <th className="p-2 tbhead">Shop Id</th>
+                                            <th className="p-2 border-black tbhead ">Shop ID</th>
+                                            <th className="p-2 tbhead">Shop Name</th>
                                             <th className="p-2 tbhead">Rent Amount</th>
                                             <th className="p-2 tbhead">Water expenses</th>
                                             <th className="p-2 tbhead">Electricity expenses</th>
@@ -194,7 +194,7 @@ export default function ExpensesList() {
                                                                 <div class="flex justify-center">
                                                                     <div class="">
 
-                                                                        <Link to='/editPackage'><button className='inline-flex items-center px-4 py-2 ml-1 text-sm font-medium text-white duration-100 bg-indigo-500 rounded-md hover:bg-blue-200' onClick={() => setData(data)}>
+                                                                        <Link to='/edit'><button className='inline-flex items-center px-4 py-2 ml-1 text-sm font-medium text-white duration-100 bg-indigo-500 rounded-md hover:bg-blue-200' onClick={() => setData(data)}>
                                                                             <div class=" grid grid-cols-2 gap-1 hover:text-black duration-100">
                                                                                 <div class="">
                                                                                     <svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -246,7 +246,7 @@ export default function ExpensesList() {
                                                             <div class="flex justify-center">
                                                                 <div class="">
 
-                                                                    <Link to='/editPackage'><button className='inline-flex items-center px-4 py-2 ml-1 text-sm font-medium text-white duration-100 bg-indigo-500 rounded-md hover:bg-blue-200' onClick={() => setData(data)}>
+                                                                    <Link to='/editExpenses'><button className='inline-flex items-center px-4 py-2 ml-1 text-sm font-medium text-white duration-100 bg-indigo-500 rounded-md hover:bg-blue-200' onClick={() => setData(data)}>
                                                                         <div class=" grid grid-cols-2 gap-1 hover:text-black duration-100">
                                                                             <div class="">
                                                                                 <svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">

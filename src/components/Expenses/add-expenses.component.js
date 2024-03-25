@@ -67,8 +67,9 @@ export default function AddExpense() {
                             confirmButtonColor: '#0712e0',
                             iconColor: '#60e004',
                             timer: 2800
+                        }).then(() => {
+                            window.location = '/expenses';
                         });
-                        // window.location = '/package'
                     } else {
                         showError("Error in adding!");
                     }
@@ -126,7 +127,8 @@ export default function AddExpense() {
                                                 <DatePicker
                                                     viewBox="0 0 20 40"
                                                     dateFormat="MMMM ,dd, yyyy"
-                                                    selected={startDate} // Use startDate as selected value
+                                                    // selected={startDate} // Use startDate as selected value
+                                                    // selected={new Date()}
                                                     onChange={(date) => setStartDate(date)} // Use setStartDate to update the selected date
                                                 />
                                             </div>

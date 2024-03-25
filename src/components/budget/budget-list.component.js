@@ -160,8 +160,8 @@ export default function PackageList() {
                             </div>
 
                             <div className='relative grid content-start grid-cols-1 gap-4 overflow-x-auto shadow-md sm:rounded-lg'>
-                                <table className='w-full text-sm text-left text-gray-500 dark:text-gray-400'>
-                                    <thead className='p-5 text-xs text-gray-700 uppercase border bg-gray-50 dark:bg-gray-700 dark:text-gray-400'>
+                                <table className='w-full text-lg text-left text-gray-500 dark:text-gray-400'>
+                                    <thead className='p-5  text-gray-700 uppercase border bg-gray-50 dark:bg-gray-700 dark:text-gray-400'>
                                         <tr className='text-center'>
                                             <th className="p-2 border-black tbhead ">Budget Name</th>
                                             <th className="p-2 tbhead">Department</th>
